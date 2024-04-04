@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C722AA2C2BBEF27200384056 /* RowDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2B2BBEF27200384056 /* RowDevice.swift */; };
+		C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */; };
+		C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA302BBF234100384056 /* DeviceDetail.swift */; };
 		C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */; };
 		C75F5D5E2BBCEE3E0059D3F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */; };
 		C75F5D602BBCEE400059D3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75F5D5F2BBCEE400059D3F8 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 		C75F5D6D2BBCEE400059D3F8 /* smartDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D6C2BBCEE400059D3F8 /* smartDoorTests.swift */; };
 		C75F5D772BBCEE400059D3F8 /* smartDoorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D762BBCEE400059D3F8 /* smartDoorUITests.swift */; };
 		C75F5D792BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D782BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift */; };
+		C75F5D862BBD0A1E0059D3F8 /* itemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D852BBD0A1E0059D3F8 /* itemView.swift */; };
+		C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D882BBD1A430059D3F8 /* Devices.swift */; };
+		C75F5D8B2BBD1D540059D3F8 /* ProfileUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C722AA2B2BBEF27200384056 /* RowDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDevice.swift; sourceTree = "<group>"; };
+		C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainDevices.swift; sourceTree = "<group>"; };
+		C722AA302BBF234100384056 /* DeviceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetail.swift; sourceTree = "<group>"; };
 		C75F5D582BBCEE3E0059D3F8 /* smartDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorApp.swift; sourceTree = "<group>"; };
 		C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		C75F5D722BBCEE400059D3F8 /* smartDoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartDoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F5D762BBCEE400059D3F8 /* smartDoorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorUITests.swift; sourceTree = "<group>"; };
 		C75F5D782BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C75F5D852BBD0A1E0059D3F8 /* itemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemView.swift; sourceTree = "<group>"; };
+		C75F5D882BBD1A430059D3F8 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */,
-				C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */,
+				C75F5D8E2BBD1E270059D3F8 /* Model */,
+				C75F5D872BBD0A2B0059D3F8 /* View */,
 				C75F5D5F2BBCEE400059D3F8 /* Assets.xcassets */,
 				C75F5D612BBCEE400059D3F8 /* Preview Content */,
 			);
@@ -125,6 +138,27 @@
 				C75F5D782BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift */,
 			);
 			path = smartDoorUITests;
+			sourceTree = "<group>";
+		};
+		C75F5D872BBD0A2B0059D3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */,
+				C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */,
+				C722AA2B2BBEF27200384056 /* RowDevice.swift */,
+				C722AA302BBF234100384056 /* DeviceDetail.swift */,
+				C75F5D852BBD0A1E0059D3F8 /* itemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C75F5D8E2BBD1E270059D3F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C75F5D882BBD1A430059D3F8 /* Devices.swift */,
+				C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75F5D862BBD0A1E0059D3F8 /* itemView.swift in Sources */,
 				C75F5D5E2BBCEE3E0059D3F8 /* ContentView.swift in Sources */,
+				C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */,
+				C722AA2C2BBEF27200384056 /* RowDevice.swift in Sources */,
 				C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */,
+				C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */,
+				C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */,
+				C75F5D8B2BBD1D540059D3F8 /* ProfileUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
