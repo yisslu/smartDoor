@@ -15,16 +15,16 @@ struct itemView: View {
                 .bold()
                 .padding()
                 .frame(maxWidth:.infinity,alignment: .leading)
-                
+            
             HStack{
                 Text(oneDevice.typeDevice.rawValue)
                     .font(.subheadline)
                     .padding()
-                    //.padding(.trailing, 40)
+                //.padding(.trailing, 40)
                     .offset(y:-30)
                     .foregroundStyle(.gray)
                 
-              Spacer()
+                Spacer()
                 
                 Image(oneDevice.imageDevice)
                     .resizable()
