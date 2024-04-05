@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C722AA2C2BBEF27200384056 /* RowDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2B2BBEF27200384056 /* RowDevice.swift */; };
+		C722AA2C2BBEF27200384056 /* ListDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2B2BBEF27200384056 /* ListDevices.swift */; };
 		C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */; };
 		C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA302BBF234100384056 /* DeviceDetail.swift */; };
 		C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */; };
@@ -17,9 +17,10 @@
 		C75F5D6D2BBCEE400059D3F8 /* smartDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D6C2BBCEE400059D3F8 /* smartDoorTests.swift */; };
 		C75F5D772BBCEE400059D3F8 /* smartDoorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D762BBCEE400059D3F8 /* smartDoorUITests.swift */; };
 		C75F5D792BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D782BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift */; };
-		C75F5D862BBD0A1E0059D3F8 /* itemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D852BBD0A1E0059D3F8 /* itemView.swift */; };
+		C75F5D862BBD0A1E0059D3F8 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */; };
 		C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D882BBD1A430059D3F8 /* Devices.swift */; };
 		C75F5D8B2BBD1D540059D3F8 /* ProfileUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */; };
+		D5D08A92A875DF817980841C /* Pods_smartDoor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8942D62E44F327757F4A36A /* Pods_smartDoor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C722AA2B2BBEF27200384056 /* RowDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDevice.swift; sourceTree = "<group>"; };
+		11176CB15F8279C5CFB5FCFE /* Pods-smartDoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartDoor.release.xcconfig"; path = "Target Support Files/Pods-smartDoor/Pods-smartDoor.release.xcconfig"; sourceTree = "<group>"; };
+		A8942D62E44F327757F4A36A /* Pods_smartDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C722AA2B2BBEF27200384056 /* ListDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDevices.swift; sourceTree = "<group>"; };
 		C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainDevices.swift; sourceTree = "<group>"; };
 		C722AA302BBF234100384056 /* DeviceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetail.swift; sourceTree = "<group>"; };
 		C75F5D582BBCEE3E0059D3F8 /* smartDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,9 +56,10 @@
 		C75F5D722BBCEE400059D3F8 /* smartDoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartDoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F5D762BBCEE400059D3F8 /* smartDoorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorUITests.swift; sourceTree = "<group>"; };
 		C75F5D782BBCEE400059D3F8 /* smartDoorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C75F5D852BBD0A1E0059D3F8 /* itemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemView.swift; sourceTree = "<group>"; };
+		C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		C75F5D882BBD1A430059D3F8 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUser.swift; sourceTree = "<group>"; };
+		FF0E250F3F7BE9E4F26718E1 /* Pods-smartDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartDoor.debug.xcconfig"; path = "Target Support Files/Pods-smartDoor/Pods-smartDoor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D08A92A875DF817980841C /* Pods_smartDoor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42A19921D3793D40043FBC77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8942D62E44F327757F4A36A /* Pods_smartDoor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D0152634DCB7E44798AD9E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF0E250F3F7BE9E4F26718E1 /* Pods-smartDoor.debug.xcconfig */,
+				11176CB15F8279C5CFB5FCFE /* Pods-smartDoor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C75F5D4F2BBCEE3E0059D3F8 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,8 @@
 				C75F5D6B2BBCEE400059D3F8 /* smartDoorTests */,
 				C75F5D752BBCEE400059D3F8 /* smartDoorUITests */,
 				C75F5D592BBCEE3E0059D3F8 /* Products */,
+				9D0152634DCB7E44798AD9E7 /* Pods */,
+				42A19921D3793D40043FBC77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +169,9 @@
 			children = (
 				C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */,
 				C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */,
-				C722AA2B2BBEF27200384056 /* RowDevice.swift */,
+				C722AA2B2BBEF27200384056 /* ListDevices.swift */,
 				C722AA302BBF234100384056 /* DeviceDetail.swift */,
-				C75F5D852BBD0A1E0059D3F8 /* itemView.swift */,
+				C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C75F5D7C2BBCEE400059D3F8 /* Build configuration list for PBXNativeTarget "smartDoor" */;
 			buildPhases = (
+				F7BC0C8F7DCCE9DA131908B4 /* [CP] Check Pods Manifest.lock */,
 				C75F5D542BBCEE3E0059D3F8 /* Sources */,
 				C75F5D552BBCEE3E0059D3F8 /* Frameworks */,
 				C75F5D562BBCEE3E0059D3F8 /* Resources */,
+				F055E4D791E9CDC30A514F8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,15 +312,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F055E4D791E9CDC30A514F8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartDoor/Pods-smartDoor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartDoor/Pods-smartDoor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartDoor/Pods-smartDoor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7BC0C8F7DCCE9DA131908B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartDoor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C75F5D542BBCEE3E0059D3F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75F5D862BBD0A1E0059D3F8 /* itemView.swift in Sources */,
+				C75F5D862BBD0A1E0059D3F8 /* DeviceView.swift in Sources */,
 				C75F5D5E2BBCEE3E0059D3F8 /* ContentView.swift in Sources */,
 				C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */,
-				C722AA2C2BBEF27200384056 /* RowDevice.swift in Sources */,
+				C722AA2C2BBEF27200384056 /* ListDevices.swift in Sources */,
 				C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */,
 				C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */,
 				C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */,
@@ -372,7 +440,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -435,7 +503,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -456,6 +524,7 @@
 		};
 		C75F5D7D2BBCEE400059D3F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0E250F3F7BE9E4F26718E1 /* Pods-smartDoor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +533,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"smartDoor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "You must be authenticate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,6 +554,7 @@
 		};
 		C75F5D7E2BBCEE400059D3F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11176CB15F8279C5CFB5FCFE /* Pods-smartDoor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +563,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"smartDoor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "You must be authenticate";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

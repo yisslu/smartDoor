@@ -7,27 +7,36 @@
 
 import SwiftUI
 
-struct RowDevice: View {
+struct ListDevices: View {
     var oneRow = BrainDevices()
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ScrollView{
                 VStack(){
                     ForEach(oneRow.devices){
                         device in
                         NavigationLink{ DeviceDetail(nameDev: device.nameDevice, typeDev: device.typeDevice, imageDev: device.imageDevice)}label:{
-                            itemView(oneDevice: device)
+                            DeviceView(oneDevice: device)
                         }
                     }
                 }
                 .padding()
             }
+            .accentColor(.green)
+            .navigationTitle("My devices")
+            .navigationBarTitleDisplayMode(.automatic)
+            .toolbarBackground(Color.white, for: .navigationBar)
+            .background(
+            Image("background")
+                .resizable()
+                .scaledToFill()
+                .frame(height:900)
+                .ignoresSafeArea()
+                .offset(x:-210))
         }
-        .navigationTitle("My devices")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    RowDevice()
+    ListDevices()
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DeviceDetail: View {
+    let brain = BrainDevices()
     var nameDev: String
     var typeDev: Devices.Types
     var imageDev: String
@@ -20,16 +21,39 @@ struct DeviceDetail: View {
                     .font(.subheadline)
                 Image(imageDev)
                     .resizable()
-                    .frame(width: 300, height: 300, alignment: .center)
+                    .frame(width: 200, height: 200, alignment: .center)
             }
             .offset(y:-150)
-            VStack{
+            .background{
+                Rectangle()
+                    .foregroundColor(.green)
+                    .frame(width: 400,height: 1000,alignment: .top)
+            }
+            HStack(spacing: 70){
                 Button("Unlock"){
-                    
+                    brain.connectMQTTServer(typeD: typeDev)
                 }
-                .tint(.blue)
+                .tint(.green)
                 .buttonStyle(.bordered)
-                .offset(y:100)
+                .controlSize(.large)
+                .offset(y:270)
+                .shadow(radius: 10)
+                
+                Button("Lock"){
+                    brain.connectMQTTServer(typeD: typeDev)
+                }
+                .tint(.green)
+                .buttonStyle(.bordered)
+                .controlSize(.large)
+                .offset(y:270)
+                .shadow(radius: 10)
+            }
+            .background{
+                Rectangle()
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
+                    .frame(width: 400,height: 450,alignment: .top)
+                    .offset(y:250)
             }
         }
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct itemView: View {
+struct DeviceView: View {
     var oneDevice: Devices
     var body: some View {
         VStack(alignment: .leading){
@@ -22,7 +22,7 @@ struct itemView: View {
                     .padding()
                 //.padding(.trailing, 40)
                     .offset(y:-30)
-                    .foregroundStyle(.gray)
+                    .foregroundStyle(.black)
                 
                 Spacer()
                 
@@ -35,13 +35,13 @@ struct itemView: View {
         }
         .background {
             Rectangle()
-                .opacity(0.3)
-                .foregroundColor(.gray)
+                .opacity(0.9)
+                .foregroundColor(.white)
         }
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 }
 
 #Preview {
-    itemView(oneDevice: Devices(name: "My principal door", image: "lockDoor", type: .lock))
+    DeviceView(oneDevice: Devices(name: "My principal door", image: "lockDoor", type: .lock))
 }

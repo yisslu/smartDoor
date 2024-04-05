@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+    UITabBar.appearance().backgroundColor = UIColor.white
+    }
+    
     var body: some View {
         TabView{
-            RowDevice()                
+            
+            ListDevices()
                 .tabItem{Image(systemName: "house")
                 Text("Home")
             }
@@ -18,8 +24,10 @@ struct ContentView: View {
                 .tabItem{Image(systemName: "person")
                     Text("Profile")
                 }
+                
         }
         .tint(.green)
+        
     }
 }
 
