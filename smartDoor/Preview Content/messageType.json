@@ -1,0 +1,14 @@
+{
+  "send": {
+    "verifiedFID": "verifiedFID",
+    "deniedFID": "deniedFID",
+    "add": "add",
+    "remove": "remove"
+  },
+  "answer": {
+    "unlocked": "unlocked",
+    "removed" : "removed",
+    "added": "added",
+    "deniedAccess": "access denied"
+  }
+}

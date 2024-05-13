@@ -7,16 +7,42 @@
 
 import SwiftUI
 
-struct ListDevices: View {
+struct ListDevices: View, Identifiable {
+    var id = UUID()
     var oneRow = BrainDevices()
+    let columnLayout = Array(repeating: GridItem(spacing: 10.0), count: 2)
+    @State private var showingDetail = [UUID : Bool]()
+    @State private var logoStatus = "lock.fill"
+    @State private var labelStatus = "Cerrado"
     var body: some View {
         NavigationStack{
             ScrollView{
-                VStack(){
+                LazyVGrid(columns: columnLayout){
                     ForEach(oneRow.devices){
                         device in
-                        NavigationLink{ DeviceDetail(nameDev: device.nameDevice, typeDev: device.typeDevice, imageDev: device.imageDevice)}label:{
+                        Button{
+                            showingDetail[device.id, default: false].toggle()
+                        }label: {
                             DeviceView(oneDevice: device)
+                        }
+                        .sheet(isPresented: Binding(
+                            get: { self.showingDetail[device.id, default: false] },
+                            set: { self.showingDetail[device.id] = $0 }
+                        )) {
+                            switch device.typeDevice.rawValue{
+                            case Types.lock.rawValue:
+                                DeviceDetailLock(brain: device, logoLocked: $logoStatus, labelStatus: $labelStatus)
+                                    .presentationDetents([.medium,.height(550)])
+                                    .presentationDragIndicator(.visible)
+                                    .frame(width:500)
+                            case Types.door.rawValue:
+                                DeviceDetailDoor(brain: device, logoLocked: $logoStatus, labelStatus: $labelStatus)
+                                    .presentationDetents([.medium,.height(550)])
+                                    .presentationDragIndicator(.visible)
+                                    .frame(width:500)
+                            default:
+                                fatalError("Cannot display the view")
+                            }
                         }
                     }
                 }
@@ -27,12 +53,12 @@ struct ListDevices: View {
             .navigationBarTitleDisplayMode(.automatic)
             .toolbarBackground(Color.white, for: .navigationBar)
             .background(
-            Image("background")
-                .resizable()
-                .scaledToFill()
-                .frame(height:900)
-                .ignoresSafeArea()
-                .offset(x:-210))
+                Image("background")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height:900)
+                    .ignoresSafeArea()
+                    .offset(x:-210))
         }
     }
 }

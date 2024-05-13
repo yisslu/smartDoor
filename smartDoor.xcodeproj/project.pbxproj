@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		C722AA2C2BBEF27200384056 /* ListDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2B2BBEF27200384056 /* ListDevices.swift */; };
 		C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */; };
-		C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA302BBF234100384056 /* DeviceDetail.swift */; };
+		C722AA312BBF234100384056 /* DeviceDetailLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722AA302BBF234100384056 /* DeviceDetailLock.swift */; };
+		C750BEDA2BEDADB500512EB1 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750BED92BEDADB400512EB1 /* MQTTManager.swift */; };
 		C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */; };
 		C75F5D5E2BBCEE3E0059D3F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */; };
 		C75F5D602BBCEE400059D3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75F5D5F2BBCEE400059D3F8 /* Assets.xcassets */; };
@@ -20,6 +21,9 @@
 		C75F5D862BBD0A1E0059D3F8 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */; };
 		C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D882BBD1A430059D3F8 /* Devices.swift */; };
 		C75F5D8B2BBD1D540059D3F8 /* ProfileUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */; };
+		C7CF85292BF29E4500FD7818 /* DeviceDetailDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF85282BF29E4500FD7818 /* DeviceDetailDoor.swift */; };
+		C7EF779F2BF1E1C200745BC0 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF779E2BF1E1C200745BC0 /* JsonManager.swift */; };
+		C7EF77A22BF1E67C00745BC0 /* messageType.json in Resources */ = {isa = PBXBuildFile; fileRef = C7EF77A12BF1E67C00745BC0 /* messageType.json */; };
 		D5D08A92A875DF817980841C /* Pods_smartDoor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8942D62E44F327757F4A36A /* Pods_smartDoor.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +49,8 @@
 		A8942D62E44F327757F4A36A /* Pods_smartDoor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartDoor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C722AA2B2BBEF27200384056 /* ListDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDevices.swift; sourceTree = "<group>"; };
 		C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainDevices.swift; sourceTree = "<group>"; };
-		C722AA302BBF234100384056 /* DeviceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetail.swift; sourceTree = "<group>"; };
+		C722AA302BBF234100384056 /* DeviceDetailLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailLock.swift; sourceTree = "<group>"; };
+		C750BED92BEDADB400512EB1 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
 		C75F5D582BBCEE3E0059D3F8 /* smartDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartDoorApp.swift; sourceTree = "<group>"; };
 		C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		C75F5D882BBD1A430059D3F8 /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 		C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUser.swift; sourceTree = "<group>"; };
+		C7CF85282BF29E4500FD7818 /* DeviceDetailDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailDoor.swift; sourceTree = "<group>"; };
+		C7EF779E2BF1E1C200745BC0 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		C7EF77A12BF1E67C00745BC0 /* messageType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messageType.json; sourceTree = "<group>"; };
 		FF0E250F3F7BE9E4F26718E1 /* Pods-smartDoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartDoor.debug.xcconfig"; path = "Target Support Files/Pods-smartDoor/Pods-smartDoor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +140,7 @@
 			children = (
 				C75F5D5B2BBCEE3E0059D3F8 /* smartDoorApp.swift */,
 				C75F5D8E2BBD1E270059D3F8 /* Model */,
+				C7EF77A02BF1E38700745BC0 /* Resources */,
 				C75F5D872BBD0A2B0059D3F8 /* View */,
 				C75F5D5F2BBCEE400059D3F8 /* Assets.xcassets */,
 				C75F5D612BBCEE400059D3F8 /* Preview Content */,
@@ -143,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C75F5D622BBCEE400059D3F8 /* Preview Assets.xcassets */,
+				C7EF77A12BF1E67C00745BC0 /* messageType.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -170,8 +180,9 @@
 				C75F5D5D2BBCEE3E0059D3F8 /* ContentView.swift */,
 				C75F5D8A2BBD1D540059D3F8 /* ProfileUser.swift */,
 				C722AA2B2BBEF27200384056 /* ListDevices.swift */,
-				C722AA302BBF234100384056 /* DeviceDetail.swift */,
+				C722AA302BBF234100384056 /* DeviceDetailLock.swift */,
 				C75F5D852BBD0A1E0059D3F8 /* DeviceView.swift */,
+				C7CF85282BF29E4500FD7818 /* DeviceDetailDoor.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,8 +192,17 @@
 			children = (
 				C75F5D882BBD1A430059D3F8 /* Devices.swift */,
 				C722AA2D2BBF1C5D00384056 /* BrainDevices.swift */,
+				C750BED92BEDADB400512EB1 /* MQTTManager.swift */,
+				C7EF779E2BF1E1C200745BC0 /* JsonManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C7EF77A02BF1E38700745BC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EF77A22BF1E67C00745BC0 /* messageType.json in Resources */,
 				C75F5D632BBCEE400059D3F8 /* Preview Assets.xcassets in Resources */,
 				C75F5D602BBCEE400059D3F8 /* Assets.xcassets in Resources */,
 			);
@@ -361,11 +382,14 @@
 			files = (
 				C75F5D862BBD0A1E0059D3F8 /* DeviceView.swift in Sources */,
 				C75F5D5E2BBCEE3E0059D3F8 /* ContentView.swift in Sources */,
-				C722AA312BBF234100384056 /* DeviceDetail.swift in Sources */,
+				C7CF85292BF29E4500FD7818 /* DeviceDetailDoor.swift in Sources */,
+				C722AA312BBF234100384056 /* DeviceDetailLock.swift in Sources */,
 				C722AA2C2BBEF27200384056 /* ListDevices.swift in Sources */,
 				C75F5D5C2BBCEE3E0059D3F8 /* smartDoorApp.swift in Sources */,
 				C722AA2E2BBF1C5D00384056 /* BrainDevices.swift in Sources */,
 				C75F5D892BBD1A440059D3F8 /* Devices.swift in Sources */,
+				C7EF779F2BF1E1C200745BC0 /* JsonManager.swift in Sources */,
+				C750BEDA2BEDADB500512EB1 /* MQTTManager.swift in Sources */,
 				C75F5D8B2BBD1D540059D3F8 /* ProfileUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smartDoor/Preview Content\"";
+				DEVELOPMENT_TEAM = JLG64SR427;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "You must be authenticate";
@@ -561,6 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"smartDoor/Preview Content\"";
+				DEVELOPMENT_TEAM = JLG64SR427;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "You must be authenticate";

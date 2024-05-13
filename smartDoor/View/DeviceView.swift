@@ -35,7 +35,7 @@ struct DeviceView: View {
         }
         .background {
             Rectangle()
-                .opacity(0.9)
+                .opacity(0.6)
                 .foregroundColor(.white)
         }
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
@@ -43,5 +43,5 @@ struct DeviceView: View {
 }
 
 #Preview {
-    DeviceView(oneDevice: Devices(name: "My principal door", image: "lockDoor", type: .lock))
+    DeviceView(oneDevice: Devices(name: "My principal door", image: "lockDoor", type: .lock, stat: false))
 }
