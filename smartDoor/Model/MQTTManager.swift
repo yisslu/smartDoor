@@ -20,11 +20,11 @@ struct MQTTManager{
         if laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error){
             laContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authenticate to open the door"){authenticate, error in
                 if authenticate{
-                    mqttClient.publish("rpi/gpio", withString: "accepted")
+                    mqttClient.publish("rpi/gpio", withString: messages.send.verifiedFID)
                 }
             }
         }else{
-            mqttClient.publish("rpi/gpio", withString: "refused")
+            mqttClient.publish("rpi/gpio", withString: messages.send.deniedFID)
         }
     }
     

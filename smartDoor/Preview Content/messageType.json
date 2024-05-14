@@ -9,6 +9,6 @@
     "unlocked": "unlocked",
     "removed" : "removed",
     "added": "added",
-    "deniedAccess": "access denied"
+    "deniedAccess": "access_denied"
   }
 }
