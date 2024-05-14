@@ -20,19 +20,27 @@ struct MQTTManager{
         if laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error){
             laContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authenticate to open the door"){authenticate, error in
                 if authenticate{
-                    mqttClient.publish("rpi/gpio", withString: messages.send.verifiedFID)
+                    publishValueForType(type: messages.send.verifiedFID)
                 }
             }
         }else{
-            mqttClient.publish("rpi/gpio", withString: messages.send.deniedFID)
+            publishValueForType(type: messages.send.deniedFID)
         }
     }
     
     func addRemoveCard(isAdd: Bool){
         if isAdd{
-            mqttClient.publish("rpi/gpio",withString: messages.send.add)
+            publishValueForType(type: messages.send.add)
         }else{
-            mqttClient.publish("rpi/gpio", withString: messages.send.remove)
+            publishValueForType(type: messages.send.remove)
         }
     }
+    
+    func publishValueForType(type: String) {
+            let jsonDict = ["type": type]
+            if let jsonData = try? JSONSerialization.data(withJSONObject: jsonDict),
+               let jsonString = String(data: jsonData, encoding: .utf8) {
+                mqttClient.publish("rpi/gpio", withString: jsonString)
+            }
+        }
 }
