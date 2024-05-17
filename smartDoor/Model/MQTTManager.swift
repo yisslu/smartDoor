@@ -9,10 +9,24 @@ import Foundation
 import CocoaMQTT
 import LocalAuthentication
 
-let mqttClient = CocoaMQTT(clientID: "iOS Device", host: "raspberry.local", port: 1883)
 
-struct MQTTManager{
+
+class MQTTManager: ObservableObject{
     
+    @Published var message = ""
+    let mqttClient: CocoaMQTT
+    init(){
+        mqttClient = CocoaMQTT(clientID: "iOS Device", host: "MacBook-Air-de-Ricardo.local", port: 1883)
+        mqttClient.subscribe("rpi/gpio", qos: CocoaMQTTQoS.qos1)
+        mqttClient.didReceiveMessage = { mqtt, message, id in
+            print("Message received in topic \(message.topic) with payload \(message.string!)")
+            self.message = message.string!
+        }
+    }
+    
+    func connect(){
+        mqttClient.connect()
+    }
     var messages : JsonManager = load("messageType.json")
     func authentication(){
         var error: NSError?
@@ -20,7 +34,7 @@ struct MQTTManager{
         if laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error){
             laContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authenticate to open the door"){authenticate, error in
                 if authenticate{
-                    publishValueForType(type: messages.send.verifiedFID)
+                    self.publishValueForType(type: self.messages.send.verifiedFID)
                 }
             }
         }else{

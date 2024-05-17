@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DeviceDetailLock: View {
     var brain: Devices
-    let managerMqtt = MQTTManager()
+    @EnvironmentObject var managerMqtt: MQTTManager
     @Binding var logoLocked: String
     @Binding var labelStatus: String
     var body: some View {
@@ -39,6 +39,7 @@ struct DeviceDetailLock: View {
                             logoLocked = "lock.open.fill"
                             labelStatus = "Abierto"
                             brain.status = true
+                            print(managerMqtt.$message)
                             
                         }else{
                             logoLocked = "lock.fill"
@@ -91,4 +92,5 @@ struct DeviceDetailLock: View {
     let logoStatus = Binding.constant("lock.fill")
     let labelStatus = Binding.constant("Cerrado")
     return DeviceDetailLock(brain: Devices(name:"Room lock",image:"lockDoor",type:.lock, stat: false), logoLocked: logoStatus, labelStatus: labelStatus)
+        .environmentObject(MQTTManager())
 }
