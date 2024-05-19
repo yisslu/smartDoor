@@ -22,7 +22,6 @@ struct DeviceView: View {
                     .padding()
                 //.padding(.trailing, 40)
                     .offset(y:-30)
-                    .foregroundStyle(.black)
                 
                 Spacer()
                 
@@ -33,9 +32,9 @@ struct DeviceView: View {
                     .offset(y:-10)
             }
         }
+        .foregroundStyle(Color(hex: "5E69EE"))
         .background {
             Rectangle()
-                .opacity(0.6)
                 .foregroundColor(.white)
         }
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))

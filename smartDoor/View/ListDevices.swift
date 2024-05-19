@@ -34,12 +34,12 @@ struct ListDevices: View, Identifiable {
                                 DeviceDetailLock(brain: device, logoLocked: $logoStatus, labelStatus: $labelStatus)
                                     .presentationDetents([.medium,.height(550)])
                                     .presentationDragIndicator(.visible)
-                                    .frame(width:500)
+                                
                             case Types.door.rawValue:
                                 DeviceDetailDoor(brain: device, logoLocked: $logoStatus, labelStatus: $labelStatus)
                                     .presentationDetents([.medium,.height(550)])
                                     .presentationDragIndicator(.visible)
-                                    .frame(width:500)
+                                    
                             default:
                                 fatalError("Cannot display the view")
                             }
@@ -48,7 +48,6 @@ struct ListDevices: View, Identifiable {
                 }
                 .padding()
             }
-            .accentColor(.green)
             .navigationTitle("My devices")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbarBackground(Color.white, for: .navigationBar)

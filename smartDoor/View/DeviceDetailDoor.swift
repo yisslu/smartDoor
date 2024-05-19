@@ -14,7 +14,7 @@ struct DeviceDetailDoor: View {
     @Binding var labelStatus: String
     var body: some View {
         ScrollView{
-            ZStack{
+            VStack{
                 HStack{
                     VStack(alignment: .leading){
                         Text(brain.nameDevice)
@@ -23,16 +23,19 @@ struct DeviceDetailDoor: View {
                         Text(brain.typeDevice.rawValue)
                             .font(.subheadline)
                     }
-                    .offset(y:-70)
+                    .foregroundStyle(Color(hex: "5E69EE"))
+                    Spacer()
                     Image(brain.imageDevice)
                         .resizable()
                         .frame(width: 85, height: 100, alignment: .center)
+                        .offset(y:70)
                 }
-                .offset(y:-30)
+                .padding()
                 
-                VStack(spacing: 10){
+                VStack {
                     Text(labelStatus)
                         .bold()
+                        .foregroundStyle(.white)
                     Button{
                         if  !brain.status{
                             logoLocked = "lock.open.fill"
@@ -50,23 +53,22 @@ struct DeviceDetailDoor: View {
                             Image(systemName: logoLocked)
                                 .resizable()
                                 .frame(width: 45, height: 50)
-                                .foregroundStyle(.gray)
+                                .foregroundStyle(.white)
                             Circle()
-                                .stroke(Color.gray, lineWidth: 10)
+                                .stroke(Color.white, lineWidth: 10)
                                 .frame(width: 150, height: 200)
                                 .shadow(radius: 10)
                         }
+                       
                     }
                 }
-                .offset(y:240)
-                /*.background{
+                .background{
                     Rectangle()
-                        .foregroundColor(.gray)
-                        .opacity(0.3)
                         .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
                         .frame(width: 380,height: 320,alignment: .top)
-                        .offset(y:250)
-                }*/
+                        .foregroundStyle(Color(hex: "5E69EE"))
+                }
+                .offset(y:100)
             }
             .padding()
         }

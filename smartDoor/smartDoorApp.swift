@@ -10,14 +10,12 @@ import CocoaMQTT
 
 @main
 struct smartDoorApp: App {
-    @StateObject var mqttClient = MQTTManager()
     init(){
         mqttClient.connect()
     }
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(mqttClient)
         }
     }
 }
