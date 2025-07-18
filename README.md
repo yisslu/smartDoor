@@ -37,7 +37,10 @@
 
 ## 📱 UI Preview
 
-*(Add screenshots here if available)*
+<p align="center">
+  <img src="assets/smartdoor-preview.png" alt="App Preview" width="250"/>
+</p>
+
 
 ---
 
@@ -48,7 +51,7 @@
    git clone https://github.com/yisslu/smartDoor.git
 2. Open the project in XCode:
    ```bash
-   open SmartDoor.xcworkspace
+   open smartDoor.xcworkspace
 3. Build and run on a real device (Face ID doesn't work on simulator).
 
 > 🧪 If you want to test with a real MQTT broker and Raspberry Pi, you'll need to configure the MQTT connection (host, topic, etc.) in the app and implement the corresponding logic on the Raspberry Pi.
